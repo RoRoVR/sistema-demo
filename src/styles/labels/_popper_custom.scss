@@ -1,0 +1,22 @@
+.popper-msg{
+    position: relative;
+
+    &:hover > span{
+        display: block;
+    }
+
+    & span{
+        position: absolute;
+        z-index: 3000;
+        top: -3px;
+        left: 25px;
+        background-color: white;
+        border: solid 1px #c5c5c5;
+        border-radius: 5px;
+        padding: 0 7px;
+        color: rgb(124, 124, 124);
+        font-weight: 600;
+        display: none;
+    }
+
+}

@@ -1,0 +1,134 @@
+.container-main{
+    background-color: #E1E5E8;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-sidebar.active {
+    background-color: $secondary-se;
+    color: white;
+    width: 240px;
+    border-radius: 0 13px 13px 0;
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .sidebar-btn-aplication{
+        cursor: pointer;
+        padding: 10px 15px;
+        border-radius: 8px;
+        color: white;
+        display: block;
+        width: 100%;
+        text-decoration: none;
+
+        &:hover{
+            background-color: #545454;
+        }
+    }
+    & .sidebar-btn-aplication.active{
+        background-color: #545454;
+    }
+}
+.main-sidebar.no-active {
+    background-color: $secondary-se;
+    color: white;
+    width: 80px;
+    border-radius: 0 13px 13px 0;
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .sidebar-btn-aplication{
+        cursor: pointer;
+        padding: 5px 10px;
+        border-radius: 8px;
+        text-align: center;
+        position: relative;
+        color: white;
+        display: block;
+        width: 100%;
+        text-decoration: none;
+
+        & i {
+            font-size: 22px;
+        }
+
+        & span{
+            position: absolute;
+            z-index: 3000;
+            top: 10px;
+            left: 60px;
+            color: white;
+            padding: 0 5px;
+            border-radius: 10px;
+            background-color: $secondary-se;
+            display: none;
+        }
+
+        &:hover{
+            background-color: #545454;
+        }
+        &:hover > span {
+            display: block;
+        }
+    }
+    & .sidebar-btn-aplication.active{
+        background-color: #545454;
+    }
+
+
+
+}
+
+.btn-active.active{
+    position: absolute;
+    top: 40px;
+    right: -10px;
+    border-radius: 50%;
+    border: none;
+    background-color: $secondary;
+    color: white;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        background-color: lighten($secondary, $amount: 5);
+    }
+}
+.btn-active.no-active{
+    position: absolute;
+    top: 40px;
+    right: -10px;
+    border-radius: 50%;
+    border: none;
+    background-color: $secondary;
+    color: white;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+    &:hover{
+        background-color: lighten($secondary, $amount: 5);
+    }
+}
+
+@media (max-width: 400px){
+
+    .main-sidebar.no-active{
+        position: fixed;
+        height: 100vh;
+        left: -75px;
+    }
+
+}

@@ -1,0 +1,14 @@
+.preview-img{
+    border-radius: 5%;
+    border: solid 3px $secondary;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    & img{
+      height: 150px;
+      width: auto;
+    }
+}

@@ -1,0 +1,175 @@
+.btn-icon-white{
+    border: none;
+    font-size: 15px;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    color: $secondary-se;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+
+    & i {
+        position: absolute;
+        top: 6px;
+    }
+
+    &:hover{
+        background-color: rgb(227, 227, 227);
+    }
+    &:disabled{
+        background-color: rgb(227, 227, 227);
+        cursor:auto;
+    }
+}
+.btn-icon-secondary{
+    border: none;
+    font-size: 15px;
+    width: 32px;
+    height: 32px;
+    background-color: $secondary;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+
+    & i {
+        position: absolute;
+        top: 6px;
+    }
+
+    &:hover{
+        background-color: lighten($secondary, $amount: 5);
+    }
+    &:disabled{
+        background-color: lighten($secondary, $amount: 5);
+        cursor:auto;
+    }
+}
+.btn-icon-success{
+    border: none;
+    font-size: 15px;
+    width: 32px;
+    height: 32px;
+    background-color: $success;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+
+    & i {
+        position: absolute;
+        top: 6px;
+    }
+
+    &:hover{
+        background-color: lighten($success, $amount: 5);
+    }
+    &:disabled{
+        background-color: lighten($success, $amount: 5);
+        cursor:auto;
+    }
+}
+.btn-icon-danger{
+    border: none;
+    font-size: 15px;
+    width: 32px;
+    height: 32px;
+    background-color: $danger;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+
+    & i {
+        position: absolute;
+        top: 5px;
+    }
+
+    &:hover{
+        background-color: lighten($danger, $amount: 10);
+    }
+    &:disabled{
+        background-color: lighten($danger, $amount: 10);
+        cursor:auto;
+    }
+}
+.btn-icon-danger-sm{
+    border: none;
+    font-size: 8px;
+    width: 16px;
+    height: 16px;
+    background-color: $danger;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+
+    & i {
+        position: absolute;
+        top: 2px;
+    }
+
+    &:hover{
+        background-color: lighten($danger, $amount: 10);
+    }
+    &:disabled{
+        background-color: lighten($danger, $amount: 10);
+        cursor:auto;
+    }
+}
+
+// ACORDEON
+.btn-icon-primary-acordeon{
+    border: none;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: $primary;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+
+    transition: all ease .2s;
+
+    &.active{
+        transform: rotate(180deg);
+    }
+
+    & i {
+        position: absolute;
+        top: 5px;
+    }
+
+    &:hover{
+        background-color: darken($primary, $amount: 7);
+    }
+    &:disabled{
+        background-color: darken($primary, $amount: 7);
+        cursor:auto;
+    }
+}
+
+.btn-text{
+    cursor: pointer;
+    color: $primary;
+}

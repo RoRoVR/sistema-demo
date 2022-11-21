@@ -1,0 +1,21 @@
+@import './bootstrap/custom';
+@import '~bootstrap/scss/bootstrap';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+// PAGES
+@import './pages/main';
+@import './pages/aplication';
+
+// LABELS
+@import './labels/buttons';
+@import './labels/inputs';
+@import './labels/window';
+@import './labels/alert_notification';
+@import './labels/acordeon_item';
+@import './labels/img';
+@import './labels/cards';
+@import './labels/popper_custom';
+@import './labels/pil';
+
+//SPENNERS
+@import './spinners/spinner-1'

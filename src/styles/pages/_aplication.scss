@@ -1,0 +1,75 @@
+
+.container-aplication.active{
+    width: calc(100vw - 240px);
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container-aplication.no-active{
+    width: calc(100vw - 80px);
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.aplication-header{
+    background-color: white;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 8px;
+    margin-bottom:1rem;
+    display: flex;
+    align-items: center;
+}
+.aplication-body{
+    height: calc(100vh - 160px);
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    & .aplication-body-container{
+        height: 100%;
+        padding: 8px;
+        overflow-y: scroll;
+        position: relative;
+    
+        &::-webkit-scrollbar{
+            width: 5px;
+        }
+    
+        &::-webkit-scrollbar-thumb{
+            background-color: $secondary-se;
+            border-radius: 50px;
+        }
+    
+        &::-webkit-scrollbar-button{
+            height: 5px;
+        }
+    }
+
+}
+.aplication-footer{
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 8px;
+    margin-top:1rem;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 400px){
+    .container-aplication.active{
+        width: 100vw;
+        background-color: aqua;
+    }
+    .container-aplication.no-active{
+        width: 100vw;
+        background-color: aqua;
+        
+    }
+
+}

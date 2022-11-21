@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+//BOTONES
+$btn-padding-y: 3px;
+$btn-padding-x: 15px;
+$btn-border-radius: 50px;
+$btn-font-weight: 400;
+$btn-border-radius-sm: 20px;
+$btn-padding-y-sm: 2px;
+
+// COLORES
+$primary: #016ED3;
+$secondary-se: #313131;
+$secondary: #5c5c5c;
+
+//FUENTE
+$font-family-base:'Quicksand', sans-serif;
+
+//INPUTS-GROUP
+$input-border-color: $primary;
+$input-group-addon-bg: $primary;
+$input-group-addon-color: white;
+$input-color: $secondary-se;
+$input-font-weight: 500;
+
+//ACCORDION
+$accordion-padding-y: 10px;
+$accordion-color: $secondary-se;
+

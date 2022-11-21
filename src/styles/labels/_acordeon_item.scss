@@ -1,0 +1,16 @@
+.acordeon-item{
+    border: solid 1px #cacaca;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    & .acordeon-item-body{
+        overflow: hidden;
+        height: auto;
+
+        &.no-active{
+            height: 0;
+        }
+    }
+
+}
